@@ -1,4 +1,4 @@
-import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { ArrowRight, ExternalLink} from "lucide-react";
 
 const projects = [
   {
@@ -7,18 +7,17 @@ const projects = [
     description: "A beautiful landing page app using React and Tailwind.",
     image: "/projects/project1.png",
     tags: ["Figma", "React", "TailwindCSS"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://www.behance.net/gallery/222581275/GrowthSapce-Landing-page",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
-    description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+    title: "Techative Website",
+description:
+  "Official Techative company website featuring service offerings, business solutions, and a responsive, performance-optimized UI.",
+
     image: "/projects/project2.png",
     tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://www.techative.in/",
   },
   {
     id: 3,
@@ -27,8 +26,7 @@ const projects = [
       "Full-featured e-commerce platform with user authentication and payment processing.",
     image: "/projects/project3.png",
     tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
+demoUrl: "https://gurjot-main.vercel.app/",
   },
 ];
 
@@ -75,20 +73,15 @@ export const ProjectsSection = () => {
                 </p>
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
-                    <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <Github size={20} />
-                    </a>
+                
+<a
+  href={project.demoUrl}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center text-purple-300 hover:text-purple-400"
+>
+  <ExternalLink  size={20} />
+</a>
                   </div>
                 </div>
               </div>
